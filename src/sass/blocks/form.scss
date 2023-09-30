@@ -1,0 +1,17 @@
+.form__input,
+.form__textarea {
+  font-family: $main-fonts;
+  font-size: 13px;
+  font-weight: 300;
+
+  color: #3f3f3f;
+
+  border: none;
+  outline: none;
+}
+
+
+.form__input:focus,
+.form__textarea:focus {
+  box-shadow: 0 0 2px 2px rgba(25, 181, 254, 0.8);
+}

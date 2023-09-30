@@ -1,0 +1,27 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.header.fixed {
+  position: fixed;
+}
+
+.header.show {
+  background-color: rgba(22, 22, 22, 0.85);
+}
+
+.header__inner {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px 0;
+}
+
+@media (max-width: 1024px) {
+  .header__inner {
+    padding: 10px 0;
+  }
+}

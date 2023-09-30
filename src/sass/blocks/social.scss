@@ -1,0 +1,48 @@
+.social__text {
+  padding: 0 12px 5px 0;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: #ffffff;
+}
+
+.social__list {
+  display: flex;
+}
+
+.social__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+  margin-right: 7px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  transition: 0.5s;
+
+  .social__icon {
+    fill: #ffffff;
+    transition: fill 0.5s linear;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $theme-color;
+  }
+
+  &:hover .social__icon,
+  &:focus .social__icon {
+    fill: $theme-color;
+  }
+}
+
+@media (max-width: 768px) {
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

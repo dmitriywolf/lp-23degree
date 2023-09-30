@@ -1,0 +1,261 @@
+.intro {
+  position: relative;
+  height: 100vh;
+  min-height: 640px;
+
+  background: url("../img/intro-bg.jpg") center no-repeat;
+  background-size: cover;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 22, 22, 0.74);
+  }
+}
+
+.intro__inner {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.intro__title {
+  margin: 0 auto;
+
+  max-width: 680px;
+
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+
+  text-align: center;
+  color: #fff;
+
+  span {
+    font-size: 36px;
+  }
+}
+
+.intro__subtitle {
+  padding-top: 30px;
+
+  font-size: 22px;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+
+.intro__form-text {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+
+.intro__form {
+  width: 100%;
+  max-width: 890px;
+  margin: 45px auto 0;
+}
+
+.intro__form-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro__label {
+  width: 32.584%;
+  margin-bottom: 20px;
+}
+
+.intro__input {
+  width: 100%;
+  padding: 0 27px;
+
+  line-height: 3.92;
+  border-radius: 25px;
+}
+
+.intro__button {
+  display: block;
+  margin: 0 auto;
+  padding: 0 50px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 3.81;
+
+  border-radius: 30px;
+}
+
+.intro__anchor {
+  position: absolute;
+  left: calc(50% - 9px);
+  bottom: 50px;
+}
+
+@media (max-width: 1024px) {
+  .intro__inner {
+    padding: 0 10px;
+  }
+
+  .intro__title {
+    font-size: 42px;
+
+    span {
+      font-size: 32px;
+    }
+  }
+
+  .intro__subtitle {
+    font-size: 20px;
+  }
+
+  .intro__form {
+    max-width: 740px;
+  }
+
+  .intro__button {
+    padding: 0 30px;
+    font-size: 15px;
+    line-height: 2.8;
+    border-radius: 20px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .intro__inner {
+    padding: 0 10px;
+  }
+
+  .intro__title {
+    max-width: 580px;
+    font-size: 36px;
+
+    span {
+      font-size: 26px;
+    }
+  }
+
+  .intro__subtitle {
+    padding-top: 15px;
+    font-size: 18px;
+  }
+
+  .intro__form {
+    max-width: 580px;
+  }
+
+  .intro__input {
+    line-height: 3.3;
+    border-radius: 25px;
+  }
+
+  .intro__button {
+    padding: 0 30px;
+    font-size: 15px;
+    line-height: 2.8;
+    border-radius: 20px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .intro__title {
+    max-width: 410px;
+    font-size: 26px;
+
+    span {
+      font-size: 18px;
+    }
+  }
+
+  .intro__subtitle {
+    padding-top: 10px;
+    font-size: 14px;
+  }
+
+  .intro__form {
+    margin-top: 30px;
+  }
+
+  .intro__button {
+    padding: 0 30px;
+    font-size: 15px;
+    line-height: 2.6;
+    border-radius: 20px;
+  }
+
+  .intro__form-inner {
+    flex-wrap: wrap;
+  }
+
+  .intro__label {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 15px;
+  }
+
+  .intro__input {
+    padding: 0 27px;
+    line-height: 3;
+    border-radius: 25px;
+  }
+}
+
+@media (max-width: 420px) {
+  .intro {
+    min-height: 568px;
+  }
+
+  .intro__title {
+    max-width: 300px;
+    font-size: 20px;
+
+    span {
+      font-size: 18px;
+    }
+  }
+
+  .intro__form {
+    margin-top: 30px;
+  }
+
+  .intro__label {
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+
+  .intro__input {
+    line-height: 2.5;
+  }
+
+  .intro__button {
+    line-height: 2.2;
+    border-radius: 15px;
+  }
+
+  .intro__form-text {
+    font-size: 12px;
+  }
+
+  .intro__anchor {
+    bottom: 35px;
+  }
+}

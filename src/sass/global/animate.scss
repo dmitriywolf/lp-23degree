@@ -1,0 +1,130 @@
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both
+}
+
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0)
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0)
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn
+}
+
+
+@keyframes fadeOut {
+  from {
+    opacity: 1
+  }
+  to {
+    opacity: 0
+  }
+}
+
+.fadeOut {
+  animation-name: fadeOut
+}
+
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3)
+  }
+  50% {
+    opacity: 1
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn
+}
+
+
+@keyframes zoomOut {
+  from {
+    opacity: 1
+  }
+  50% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3)
+  }
+  to {
+    opacity: 0
+  }
+}
+
+.zoomOut {
+  -webkit-animation-name: zoomOut;
+  animation-name: zoomOut
+}
+
+
+@keyframes flipInX {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0
+  }
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in
+  }
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1
+  }
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg)
+  }
+  to {
+    transform: perspective(400px)
+  }
+}
+
+.flipInX {
+  backface-visibility: visible !important;
+  animation-name: flipInX
+}
+
+
+@keyframes flipOutX {
+  from {
+    transform: perspective(400px)
+  }
+  30% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1
+  }
+  to {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0
+  }
+}
+
+.flipOutX {
+  animation-name: flipOutX;
+  backface-visibility: visible !important
+}

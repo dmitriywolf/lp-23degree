@@ -1,0 +1,21 @@
+.button {
+  padding: 0;
+  font-family: $main-fonts;
+  color: #ffffff;
+
+  background-color: $theme-color;
+  border: none;
+
+  outline: none;
+  transition: background-color 0.4s linear, opacity 0.4s linear;
+
+  &:hover,
+  &:focus {
+    background-color: #eb2f21;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}

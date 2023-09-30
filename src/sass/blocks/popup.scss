@@ -1,0 +1,139 @@
+.popup__answer {
+  position: fixed;
+  top: 25%;
+  left: calc(50% - 220px);
+
+  width: 100%;
+  max-width: 440px;
+  padding: 25px 50px;
+
+  text-align: center;
+  background-color: #fff;
+
+  box-shadow: 0 0 4px 0 rgba(11, 100, 100, 0.5);
+  border-top: 30px solid #464646;
+  z-index: 120;
+
+  img {
+    position: relative;
+    width: 90px;
+  }
+
+  .img__failed {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 45px;
+      right: 0;
+      width: 90px;
+      height: 10px;
+      background-color: #eb2f21;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg)
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 45px;
+      left: 0;
+      width: 90px;
+      height: 10px;
+      background-color: #eb2f21;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg)
+    }
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .popup__answer {
+    left: calc(50% - 200px);
+    max-width: 400px;
+    padding: 20px 45px;
+    border-top-width: 25px;
+
+    img {
+      width: 70px;
+      height: 70px
+    }
+
+    .img__failed {
+      width: 70px;
+      height: 70px;
+
+      &::after {
+        bottom: 35px;
+        width: 70px;
+      }
+
+      &::before {
+        bottom: 35px;
+        width: 70px
+      }
+    }
+
+    p {
+      font-size: 18px
+    }
+
+  }
+}
+
+@media (max-width: 768px) {
+  .popup__answer {
+    left: calc(50% - 180px);
+    max-width: 360px;
+    padding: 20px 40px;
+    border-top-width: 20px;
+
+    p {
+      font-size: 16px
+    }
+
+
+  }
+
+}
+
+@media (max-width: 420px) {
+  .popup__answer {
+    left: calc(50% - 150px);
+    max-width: 300px;
+    padding: 10px 20px;
+
+
+    img {
+      width: 60px;
+      height: 60px
+    }
+
+    .img__failed {
+      width: 60px;
+      height: 60px;
+
+
+      &::after {
+        bottom: 30px;
+        width: 60px
+      }
+
+      &::before {
+        bottom: 30px;
+        width: 60px
+      }
+    }
+
+
+  }
+}
